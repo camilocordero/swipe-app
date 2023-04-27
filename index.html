@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+</head>
+
+<body>  
+<canvas class="background" onload="initParticles()"></canvas>   
+
+<div class="swipe">
+    <div class="card-groups">
+        <div class="card-group" data-index="0" data-status="active"> 
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+        </div>
+        <div class="card-group" data-index="1" data-status="unknown">
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+        </div>
+        <div class="card-group" data-index="2" data-status="unknown">
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+            <div class="little-card card">
+
+            </div>
+            <div class="big-card card">
+
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id = "dontlike" onclick="handledontlikeclick()">
+            <i class="fa-solid fa-xmark"></i>
+            
+        </button>
+        <button id = "like" onclick="handlikeclick()">
+            <i class="fa-solid fa-heart"></i>
+        </button>
+    </div>
+</div>
+<script src="particles.js-master\dist\particles.min.js" ></script>
+<script src="particles.js"></script>
+</body>
+
+
+
+</html>

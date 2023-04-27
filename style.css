@@ -1,0 +1,162 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  display: grid;
+  background-color: rgb(3, 0, 27);
+  place-items: center;
+}
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card-groups,
+.card-group,
+.card {
+  aspect-ratio: 5/7;
+}
+.card-groups,
+.card-group,
+.big-card {
+  width: 30vmin;
+}
+
+.card-group {
+  position: absolute;
+  transition: transform 400ms ease;
+}
+
+.card-group[data-status="unknown"] {
+  transform: scale(0);
+}
+
+.card-group[data-status="after"] {
+  transform: translateX(50%) scale(0);
+}
+
+.card {
+  background-color: rgb(255, 255, 255, 0.05);
+  position: absolute;
+  border-radius: 10px;
+  transition: transform 800ms cubic-bezier(0, 0.07, 0.24, 1.02);
+  border: 3px solid #000000;
+}
+.little-card {
+  background-color: rgba(174, 184, 27, 0);
+  width: 12vmin;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.little-card:nth-child(1) {
+  transform: translate(-10%) rotate(-1deg);
+  background-image: url(/pics/gato5.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big-card:nth-child(2) {
+  transform: translate(-10%) rotate(-1deg);
+  background-image: url(/pics/gato1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.little-card:nth-child(3) {
+  transform: translate(-10%) rotate(-1deg);
+  background-image: url(/pics/gato6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big-card:nth-child(4) {
+  transform: rotate(-2deg);
+  background-image: url(/pics/gato4.jpg);
+  background-repeat: no-repeat;
+  background-size: 140%;
+}
+.little-card:nth-child(5) {
+  transform: translate(-10%) rotate(-1deg);
+  background-image: url(/pics/gato7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big-card:nth-child(6) {
+  transform: translate(-6%) rotate(-3deg);
+  background-image: url(/pics/gato3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.little-card:nth-child(7) {
+  transform: translate(-10%) rotate(-1deg);
+  background-image: url(/pics/gato8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big-card:nth-child(8) {
+  transform: translate(10%, 3%) rotate(5deg);
+  background-image: url(/pics/gato2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-group:hover > .little-card:nth-child(1) {
+  transform: translate(-200%, -200%) rotate(10deg);
+}
+
+.card-group:hover > .big-card:nth-child(2) {
+  transform: translate(-150%, 15%) rotate(-20deg);
+}
+
+.card-group:hover > .little-card:nth-child(3) {
+  transform: translate(-200%, 150%) rotate(-20deg);
+}
+
+.card-group:hover > .big-card:nth-child(4) {
+  transform: translate(-50%, 5%) rotate(-7.5deg);
+}
+.card-group:hover > .little-card:nth-child(5) {
+  transform: translate(200%, -180%) rotate(-15deg);
+}
+
+.card-group:hover > .big-card:nth-child(6) {
+  transform: translate(50%, 5%) rotate(7.5deg);
+}
+.card-group:hover > .little-card:nth-child(7) {
+  transform: translate(200%, 150%) rotate(20deg);
+}
+
+.card-group:hover > .big-card:nth-child(8) {
+  transform: translate(150%, 15%) rotate(20deg);
+}
+
+.buttons {
+  margin-top: 8vmin;
+  display: flex;
+  justify-content: space-around;
+  padding: 5vmin;
+}
+.buttons > button {
+  font-size: 2.5vmin;
+  border: 0.4vmin solid rgb(200, 200, 200);
+  border-radius: 100%;
+  color: white;
+  background-color: transparent;
+  height: 7vmin;
+  width: 7vmin;
+  cursor: pointer;
+}
+
+#like {
+  color: rgb(179, 12, 12);
+  border-color: rgb(179, 12, 12);
+}
+
+#like:hover {
+  transform: scale(1.2) ;
+}
+
+#dontlike:hover {
+    transform: scale(1.2);
+  }
